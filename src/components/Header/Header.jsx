@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   const links = (
     <>
-      <li><NavLink to='/'>Home</NavLink></li>
+      <li><NavLink className={'text-[#757575]'} to='/'>Home</NavLink></li>
       <li><NavLink className={'text-[#7E90FE]'} to='/statistics'>Statistics</NavLink></li>
-      <li><NavLink to='/applied'>Applied Jobs</NavLink></li>
-      <li><NavLink to='/blogs'>Blogs</NavLink></li>
+      <li><NavLink className={'text-[#757575]'} to='/applied'>Applied Jobs</NavLink></li>
+      <li><NavLink className={'text-[#757575]'} to='/blogs'>Blogs</NavLink></li>
       
     </>
   );
@@ -33,20 +33,20 @@ const Header = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-base font-medium"
             >
              {links}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+          <a className="text-[#1A1919] font-extrabold text-3xl">Career Hub</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 text-base font-medium">
            {links}
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Button</a>
+          <button className="px-7 py-4 text-white bg-[#9873FF] text-lg rounded-lg font-semibold">Star Applying</button>
         </div>
       </div>
     </div>

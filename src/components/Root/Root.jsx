@@ -5,8 +5,10 @@ import Header from "../Header/Header";
 const Root = () => {
     return (
         <div>
+            <div className="container mx-auto py-5 px-10">
             <Header></Header>
             <Outlet></Outlet>
+            </div>
             <Footer></Footer>
         </div>
     );
